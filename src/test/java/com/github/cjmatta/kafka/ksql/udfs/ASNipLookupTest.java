@@ -33,22 +33,20 @@ public class ASNipLookupTest {
 
   }
 
-/*
   @Test
   public void ASNipLookupNullIPTest() {
-    assertThat(udf.getasnforip(null), hasToString());
+    assertThat(udf.getasnforip(null), hasToString("Struct{ASN=0}"));
   }
 
   @Test
   public void ASNipLookupNotIPAddressTest() {
-    assertThat(udf.getasnforip("not an IP address"), hasToString("Struct{}"));
+    assertThat(udf.getasnforip("not an IP address"), hasToString("Struct{ASN=0}"));
   }
 
   @Test
   public void ASNipLookupPrivateIPAddressTest() {
-    assertThat(udf.getasnforip("10.0.1.14"), hasToString("Struct{}"));
+    assertThat(udf.getasnforip("10.0.1.14"), hasToString("Struct{ASN=0}"));
   }
-*/
 
   private void configure(String mmdbPath) {
     Map<String, String> config = new HashMap<String, String>();

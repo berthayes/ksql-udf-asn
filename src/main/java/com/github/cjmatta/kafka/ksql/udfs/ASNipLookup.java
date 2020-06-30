@@ -54,7 +54,7 @@ public class ASNipLookup implements Configurable {
         try {
             SYSTEM_NUMBER = this.reader.asn(InetAddress.getByName(ip)).getAutonomousSystemNumber();
         } catch (Exception e) {
-            SYSTEM_NUMBER = null;
+            SYSTEM_NUMBER = 0;
         }
 
         String org;
