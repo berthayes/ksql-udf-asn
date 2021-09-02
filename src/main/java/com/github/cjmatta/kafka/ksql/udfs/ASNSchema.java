@@ -8,7 +8,7 @@ public class ASNSchema {
     public Schema getASNSchema(){
 
         Schema ASNSchema = SchemaBuilder.struct()
-                .field("ASN", Schema.INT32_SCHEMA)
+                .field("ASN", Schema.OPTIONAL_INT32_SCHEMA)
                 .field("ORG", Schema.OPTIONAL_STRING_SCHEMA)
                 .optional()
                 .build();
